@@ -29,11 +29,13 @@ const alienCucushumushu = aliens.find(alien => alien.name === 'Cucushumushu');
 const mutationPorompompero = mutations.find(
   mutation => mutation.name === 'Porompompero'
 );
+console.log('6.3 → Alien encontrado:', alienCucushumushu);
+console.log('6.3 → Mutación encontrada:', mutationPorompompero);
+
 const fusedAlien = {
   ...alienCucushumushu,
   mutation: { ...mutationPorompompero }
 };
 console.log('6.3 →', fusedAlien);
-
 
 

@@ -28,7 +28,9 @@ console.log('3.5 →', colorsWithoutIndex2);
 // COMPROBACIÓN DE INMUTABILIDAD:
 // Demostramos que modificar la copia no altera el array ni objeto original.
 pointsListCopy.push(999);
+toyCopy.color = 'azul';
 console.log('Comprobación 3.1 (original no mutado tras modificar copia):', pointsList);
+console.log('Comprobación 3.2 (copia modificada):', toyCopy);
+console.log('Comprobación 3.2 (objeto original intacto):', toy);
 console.log('Comprobación 3.5 (original colors intacto):', colors);
-
 

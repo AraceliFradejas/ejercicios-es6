@@ -18,7 +18,8 @@ for (const movie of movies) {
   }
 }
 
+// La guía indica que deberían salir cuatro categorías, pero los datos incluyen también
+// 'thriller' en The Voices. Por tanto, el resultado correcto contiene cinco categorías.
 console.log('9 → Categorías únicas sin duplicados:', categories);
-
 
 
