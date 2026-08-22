@@ -23,8 +23,7 @@ console.log('6.1 →', number100);
 const movie2010 = movies.find(movie => movie.date === 2010);
 console.log('6.2 →', movie2010);
 
-// 6.3: encuentra el alien 'Cucushumushu' y la mutación 'Porompompero'.
-// Luego fusiona el alien anidando el objeto de la mutación dentro de la propiedad .mutation.
+// 6.3: busca el alien y su mutación
 const alienCucushumushu = aliens.find(alien => alien.name === 'Cucushumushu');
 const mutationPorompompero = mutations.find(
   mutation => mutation.name === 'Porompompero'
@@ -34,8 +33,7 @@ console.log('6.3 → Mutación encontrada:', mutationPorompompero);
 
 const fusedAlien = {
   ...alienCucushumushu,
-  mutation: { ...mutationPorompompero }
+  mutation: mutationPorompompero
 };
 console.log('6.3 →', fusedAlien);
-
 

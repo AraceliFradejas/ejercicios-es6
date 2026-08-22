@@ -1,6 +1,6 @@
 const mainCharacters = ['Luke', 'Leia', 'Han Solo', 'Chewbacca', 'Rey', 'Anakin', 'Obi-Wan'];
 
-// Reutilizamos findArrayIndex del ejercicio 12
+// Reutilizo findArrayIndex del ejercicio anterior
 function findArrayIndex(array, text) {
   for (let i = 0; i < array.length; i++) {
     if (array[i] === text) {
@@ -10,8 +10,7 @@ function findArrayIndex(array, text) {
   return -1;
 }
 
-// removeItem: localiza el elemento usando findArrayIndex y lo elimina con splice().
-// IMPORTANTE: Se valida que index !== -1 para evitar que splice(-1, 1) elimine accidentalmente el último elemento.
+// Elimina el elemento solo si existe
 function removeItem(array, text) {
   const index = findArrayIndex(array, text);
   if (index !== -1) {
@@ -20,8 +19,7 @@ function removeItem(array, text) {
   return array;
 }
 
-// Ejemplos de uso y comprobación:
-// NOTA: removeItem muta directamente el array original recibido por parámetro.
+// removeItem modifica el array original
 console.log('13 → Array inicial:', [...mainCharacters]);
 
 console.log('13 → Eliminando "Rey":', removeItem(mainCharacters, 'Rey'));
@@ -33,5 +31,4 @@ console.log('13 → Array tras intento fallido (sin cambios accidentales):', mai
 console.log('13 → Eliminando el primer elemento ("Luke"):', removeItem(mainCharacters, 'Luke'));
 console.log('13 → Eliminando el último elemento ("Obi-Wan"):', removeItem(mainCharacters, 'Obi-Wan'));
 console.log('13 → Estado final del array:', mainCharacters);
-
 

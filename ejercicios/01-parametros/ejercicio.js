@@ -1,6 +1,3 @@
-// Crea una arrow function con parámetros a y b. Sus valores predeterminados
-// deben ser 10 y 5, y la función debe mostrar su suma.
-
 // ---------- 1.1, 1.2 y 1.3 ----------
 const suma = (a = 10, b = 5) => {
   const resultado = a + b;
@@ -20,7 +17,6 @@ suma(7);
 console.log('1.3 (dos argumentos: 7, 3):');
 suma(7, 3);
 
-// EXTRA: prueba undefined como primer argumento y un número como segundo
+// Prueba extra: undefined hace que se use el valor por defecto de a
 console.log('EXTRA (undefined como primer argumento y 20 como segundo):');
 suma(undefined, 20);
-

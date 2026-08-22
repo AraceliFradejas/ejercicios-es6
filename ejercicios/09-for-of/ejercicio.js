@@ -5,9 +5,7 @@ const movies = [
   { title: 'Shrek', duration: 111, categories: ['comedia', 'aventura', 'animación'] }
 ];
 
-// 9: recorremos el array de películas con un bucle for...of externo,
-// y las categorías de cada película con otro bucle for...of interno.
-// Agregamos cada categoría al array solo si aún no existe (usando .includes()).
+// 9: guardo cada categoría una sola vez
 const categories = [];
 
 for (const movie of movies) {
@@ -21,5 +19,4 @@ for (const movie of movies) {
 // La guía indica que deberían salir cuatro categorías, pero los datos incluyen también
 // 'thriller' en The Voices. Por tanto, el resultado correcto contiene cinco categorías.
 console.log('9 → Categorías únicas sin duplicados:', categories);
-
 

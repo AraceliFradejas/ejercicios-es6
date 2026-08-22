@@ -32,14 +32,13 @@ console.log('5.4 →', uStreamers);
 const legendsStreamers = streamers
   .filter(streamer => streamer.gameMorePlayed.includes('Legends'))
   .map(streamer => {
-    if (streamer.age > 35) {
-      return { ...streamer, gameMorePlayed: streamer.gameMorePlayed.toUpperCase() };
-    }
-    return { ...streamer };
+    return streamer.age > 35
+      ? { ...streamer, gameMorePlayed: streamer.gameMorePlayed.toUpperCase() }
+      : streamer;
   });
 console.log('5.5 →', legendsStreamers);
 
-// 5.6: Filtrado en tiempo real desde el DOM (navegador).
+// 5.6: filtro en tiempo real desde el navegador
 if (typeof document !== 'undefined') {
   const input = document.querySelector('[data-function="toFilterStreamers"]');
 
@@ -53,5 +52,4 @@ if (typeof document !== 'undefined') {
     });
   }
 }
-
 

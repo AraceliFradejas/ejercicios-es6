@@ -5,7 +5,7 @@ const fantasticFour = [
   'La cosa'
 ];
 
-// Versión clásica: conserva temporalmente uno de los valores para no perderlo.
+// Versión clásica
 function swapClassic(array, firstIndex, secondIndex) {
   const temporaryValue = array[firstIndex];
   array[firstIndex] = array[secondIndex];
@@ -13,8 +13,7 @@ function swapClassic(array, firstIndex, secondIndex) {
   return array;
 }
 
-// swap: intercambia la posición de dos elementos en un array mediante asignación por destructuring ES6.
-// Valida primero que ambos índices estén dentro del rango válido [0, array.length - 1].
+// Versión ES6 con destructuring
 function swap(array, firstIndex, secondIndex) {
   if (
     firstIndex < 0 ||
@@ -26,12 +25,11 @@ function swap(array, firstIndex, secondIndex) {
     return array;
   }
 
-  // Intercambio sin variable auxiliar temporal usando destructuring de arrays en ES6
   [array[firstIndex], array[secondIndex]] = [array[secondIndex], array[firstIndex]];
   return array;
 }
 
-// Ejemplos de uso y comprobación:
+// Pruebas
 console.log('15 → Array inicial:', [...fantasticFour]);
 console.log(
   '15 → Versión clásica (sobre una copia, índices 0 y 3):',
@@ -46,4 +44,3 @@ console.log('15 → Swap mismos índices (1 y 1):', swap(fantasticFour, 1, 1));
 
 // Intento con índice no válido (-1 o fuera de rango)
 console.log('15 → Swap con índice inválido (0 y 10):', swap(fantasticFour, 0, 10));
-

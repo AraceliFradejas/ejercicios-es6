@@ -7,14 +7,12 @@ const videogames = [
   { name: 'Legend of Zelda: Breath of the wild', genders: ['RPG'], score: 10 }
 ];
 
-// 8.1: primero filtramos los videojuegos que contienen el género 'RPG' con .filter().
+// 8.1: juegos que contienen el género RPG
 const rpgGames = videogames.filter(game => game.genders.includes('RPG'));
 
-// Luego sumamos las puntuaciones de los juegos filtrados con .reduce() y calculamos la media.
 const totalRpgScore = rpgGames.reduce((acc, game) => acc + game.score, 0);
 const averageRpgScore = totalRpgScore / rpgGames.length;
 const roundedAverageRpgScore = Math.round(averageRpgScore * 100) / 100;
 
 console.log('8.1 → Videojuegos RPG filtrados:', rpgGames);
 console.log('8.1 → Media de puntuación de juegos RPG (2 decimales):', roundedAverageRpgScore);
-
