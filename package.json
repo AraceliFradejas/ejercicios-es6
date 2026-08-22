@@ -1,0 +1,13 @@
+{
+  "name": "ejercicios-es6",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ejercicios prácticos de JavaScript ES6",
+  "scripts": {
+    "ejercicio": "node scripts/ejercicio.js",
+    "revisar": "node scripts/revisar.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
