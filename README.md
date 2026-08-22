@@ -1,6 +1,8 @@
 # Ejercicios ES6 — JavaScript Moderno
 
-Repositorio con la resolución completa y documentada de la batería de ejercicios de JavaScript moderno (ES6).
+Este repositorio contiene la entrega de **Ejercicios ES6 — JavaScript Moderno**, correspondiente al módulo **WEB DESIGN [ADVANCED]** del máster [**ROCK{THECODE} DESARROLLO WEB**](https://app.thepower.education/programs/65d60dfcdd8a1e42236248b1) de **ThePower**.
+
+La entrega reúne 15 ejercicios prácticos para trabajar las principales características de JavaScript moderno (ES6).
 
 ## Requisitos
 
@@ -48,3 +50,6 @@ Para el ejercicio 5.6, abre `ejercicios/05-filter/index.html` en el navegador y 
 14. **`14-roll-dice`**: Simulación de tiradas de dados aleatorios de $N$ caras con `Math.random`.
 15. **`15-swap`**: Intercambio de posiciones dentro de un array mediante destructuring assignment ES6.
 
+## Autora
+
+[AraceliFradejas](https://github.com/AraceliFradejas/AraceliFradejas/blob/main/README.md)
